@@ -1,0 +1,273 @@
+body {
+  background: #fff;
+}
+.body-grid {
+  display: grid;
+  justify-content: center;
+  margin: 10px 0;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 900;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  width: 569px;
+}
+.banner {
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  color: #00b894;
+  font-size: 50px;
+}
+.options {
+  display: inherit;
+  grid-template-columns: repeat(2, minmax(400px, 293px));
+}
+figure {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  width: 280px;
+  height: 280px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.primero {
+  justify-self: flex-end;
+}
+.segundo {
+  justify-self: flex-start;
+}
+
+figure img {
+  width: 100%;
+}
+
+.select:hover {
+  filter:brightness(0.95);
+}
+
+.is-active {
+  filter:brightness(0.8);
+}
+
+.button {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.button a {
+  background: #d63031;
+  border: 0px;
+  border-radius: 14px;
+  height: 60px;
+  width: 183px;
+  color: white;
+  /* cursor: pointer; */
+  font-size: 25px;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: 60px;
+}
+.button a:hover {
+  background: #bd292a;
+}
+
+/* Mostrando datos de firebase */
+
+/*FERNANDO*/
+main {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+.shadow{
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+.banner-resultados{
+  background-color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin: 50px 50px 0 50px;
+}
+.container-list{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+}
+h2{
+  color: black;
+  font-size: 45px;
+  font-weight: 900;
+  margin: 0 auto;
+}
+.productos{
+  margin-top: 20px;
+  height: auto;
+  width: 200px;
+  border-radius: 5px;
+}
+.categoria{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  margin-bottom: 15px;
+  font-size: 24px;
+  border-radius: 5px;
+  line-height: 50px;
+}
+.producto{
+  width: 150px;
+  height: 50px;
+  background-color: #74b9ff;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 24px;
+  line-height: 50px;
+}
+.destino{
+  background-color: #74b9ff;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  font-weight: 600;
+  display: none;
+}
+.supermercado{
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 25%;
+}
+.super{
+  width: 100%;
+  height: 50px;
+  background-color: #81ecec;
+  margin-bottom: 15px;
+  font-size: 24px;
+  border-radius: 5px;
+  line-height: 50px;
+}
+.container-product-metro, .container-product-tottus, .container-product-wong{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container-names{
+  width: 78%;
+}
+.container-price{
+  width: 20%
+}
+.name {
+  background-color: #ffeaa7;
+}
+.precio, .name{
+  margin-bottom: 15px;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  line-height: 50px;
+  padding: 0 4px;
+}
+.precio_total{
+  width: 100%;
+  height: 50px;
+  background-color: #ff7675;
+  font-size: 24px;
+  border-radius: 5px;
+  line-height: 50px;
+}
+.hide{
+  display: none;
+}
+.box {
+  overflow: hidden;
+}
+
+/*REPONSIVE*/
+@media screen and (max-width: 1023px) {
+  header {
+    justify-content: space-around;
+  }
+  /*fernando*/
+  .productos{
+    margin-right: 5px;
+  }
+  .supermercado{
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    display: grid;
+  }
+  .banner,
+  .button {
+    margin-bottom: 30px;
+  }
+  .options {
+    grid-template-columns: repeat(1, minmax(400px, 293px));
+    justify-content: center;
+  }
+  figure {
+    width: 300px;
+    height: 300px;
+  }
+  .primero,
+  .segundo {
+    justify-self: center;
+  }
+
+  /*fernando*/
+  .banner-resultados{
+    margin: 50px 10px 10px 10px;
+  }
+  h2{
+    font-size: 42px;
+  }
+  .block-responsive{
+    display: block;
+  }
+  .hide-responsive{
+    display: none;
+  }
+  .container-list{
+    width: 100%;
+    padding: 10px;
+    display: block;
+  }
+  .categoria{
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+    line-height: 40px;
+  }
+  .productos{
+    width: 45%;
+    font-size: 14px;
+  }
+  .supermercado{
+    width: 70%;
+    font-size: 14px;
+    display: inline-block;
+  }
+  .container-names{
+    width: 78%;
+  }
+  .container-price{
+    width: 20%;
+  }
+}
